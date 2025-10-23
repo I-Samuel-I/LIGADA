@@ -11,7 +11,9 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         user-select: none;
         scroll-behavior: smooth;
+        font-family: "Raleway" ,sans-serif;
         font-size: 16px;
+        background-color:#FCF6FD;
         
         img{
             pointer-events: none;
