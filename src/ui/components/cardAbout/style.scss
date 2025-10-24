@@ -1,0 +1,46 @@
+$defaultColor: #5a10698a;
+
+.cardAbout-container {
+  margin-top: 5%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+
+  .each-card {
+    width: 15%;
+    text-align: start;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 2px #e1d1e4;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+
+    &:hover {
+      border: solid 2px $defaultColor;
+    }
+
+    h1 {
+      margin-top: 15%;
+      font-size: 1.2rem;
+    }
+    p {
+      margin-top: 15%;
+      width: 100%;
+      color: #6b5e6e;
+      line-height: 1.2.5rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #efe7f0;
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+}

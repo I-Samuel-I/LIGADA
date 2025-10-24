@@ -1,18 +1,22 @@
 export const card = [
   {
-    title: "Programação",
-    text: "Comece a criar programas e aplicativos de forma prática",
+    icon: "fa-solid fa-code", 
+    title: "Desenvolvimento",
+    text: "Mantenha-se atualizada com as linguagens e frameworks mais recentes do mercado.",
   },
   {
-    title: "Banco de Dados",
-    text: "Aprenda a guardar e organizar informações importantes.",
+    icon: "fa-solid fa-database", 
+    title: "Dados e Estrutura",
+    text: "Explore o universo de bancos de dados, arquitetura e manipulação de informações.",
   },
   {
-    title: " Desenvolvimento Web",
-    text: "Crie sites de forma dinâmica e funcional.",
+    icon: "fa-solid fa-globe",
+    title: "Impacto Global",
+    text: "Participe de projetos que conectam mulheres em tecnologia ao redor do mundo.",
   },
   {
-    title: "Engenharia de Software",
-    text: "Aprenda a colaborar, organizar e criar projetos com outras pessoas.",
+    icon: "fa-regular fa-book", 
+    title: "Material Educativo",
+    text: "Acesse uma biblioteca de e-books, artigos e tutoriais exclusivos da comunidade.",
   },
 ];
