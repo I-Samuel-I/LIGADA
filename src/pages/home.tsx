@@ -1,6 +1,7 @@
 import "./style.scss";
 import CardAbout from "../ui/components/cardAbout";
 import CardAds from "../ui/components/cardADS";
+import Tools from "../ui/components/tools";
 
 export default function HomePage() {
   return (
@@ -77,6 +78,10 @@ export default function HomePage() {
             de informação.
           </p>
           <CardAds />
+          <Tools />
+        </section>
+        <section className="projectEvent-container">
+
         </section>
       </main>
     </>
