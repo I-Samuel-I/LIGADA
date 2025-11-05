@@ -2,6 +2,10 @@ import "./style.scss";
 import CardAbout from "../ui/components/cardAbout";
 import CardAds from "../ui/components/cardADS";
 import Tools from "../ui/components/tools";
+import EventCard from "../ui/components/events";
+import CardNextEvents from "../ui/components/nextEvents";
+import ContactForm from "../ui/components/contact";
+import SocialContact from "../ui/components/social";
 
 export default function HomePage() {
   return (
@@ -43,11 +47,8 @@ export default function HomePage() {
           </h2>
           <p className="about-text">
             Somos uma liga acadêmica dedicada a fortalecer a presença feminina
-            na
-            <br />
-            tecnologia, criando um espaço seguro e colaborativo paracrescimento
-            profissional
-            <br />e pessoal.
+            na tecnologia, criando um espaço seguro e colaborativo
+            paracrescimento profissional e pessoal.
           </p>
           <div>
             <CardAbout />
@@ -56,32 +57,49 @@ export default function HomePage() {
             <h3>Nossa Missão</h3>
             <p>
               Incentivar e empoderar mulheres no curso de Análise
-              eDesenvolvimento de Sistemas,
-              <br />
-              promovendo igualdade de oportunidades, desenvolvimento técnico e
-              criando uma <br />
+              eDesenvolvimento de Sistemas, promovendo igualdade de
+              oportunidades, desenvolvimento técnico e criando uma
               comunidadecolaborativa que transforma desafios em conquistas
               coletivas.
             </p>
           </aside>
         </section>
         {/* =============================================================== */}
-        <section className="ads-container">
+        <section className="title-section">
           <h2>
             Sobre o Curso de <span>ADS</span>
           </h2>
-          <p className="ads-text">
+          <p className="text-title">
             Análise e Desenvolvimento de Sistemas é um curso tecnólogo focado em
-            formar <br />
-            profissionais capacitados para desenvolver, implementar e gerenciar
-            sistemas <br />
-            de informação.
+            formar profissionais capacitados para desenvolver, implementar e
+            gerenciar sistemas de informação.
           </p>
           <CardAds />
           <Tools />
         </section>
-        <section className="projectEvent-container">
-
+        <section className="title-section">
+          <h2>
+            Projetos e <span>Eventos</span>
+          </h2>
+          <p className="text-title">
+            Participe de a tividades que vão impulsionar sua carreira e expandir
+            suas habilidades técnicas.
+          </p>
+          <EventCard />
+          <CardNextEvents />
+        </section>
+        <section className="title-section">
+          <h2>
+            Entre em <span>Contato</span>
+          </h2>
+          <p className="text-title">
+            Tem dúvidas ou sugestões? Estamos aqui para ajudar! Entre em contato
+            através das nossas redes sociais ou envie uma mensagem.
+          </p>
+          <article className="contact-content">
+            <ContactForm />
+            <SocialContact />
+          </article>
         </section>
       </main>
     </>

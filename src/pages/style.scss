@@ -98,6 +98,7 @@ main {
     .about-text {
       font-size: 1.2rem;
       font-weight: 500;
+      width: 60%;;
       margin-top: 2%;
       line-height: 2rem;
       color: #6b5e6e;
@@ -130,19 +131,33 @@ main {
   // ================ about-ADS style ================
   .ads-container {
     margin-top: 5%;
+  }
 
-    h2 {
-      font-size: 3rem;
-      span {
-        color: $defaultColor;
-      }
+  .contact-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%
+    
+  }
+}
+
+
+ // ================ generic style title section ================
+.title-section {
+  h2 {
+    font-size: 3rem;
+    span {
+      color: $defaultColor;
     }
-    .ads-text {
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin-top: 1%;
-      line-height: 2rem;
-      color: #6b5e6e;
-    }
+  }
+  .text-title {
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    line-height: 2rem;
+    width: 60%;
+    color: #6b5e6e;
   }
 }

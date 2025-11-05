@@ -1,30 +1,30 @@
-const event = [
+export const event = [
   {
+    id: 1,
+    icon: "fa-solid fa-trophy",
     title: "Hackathons",
-    text: "Participe de maratonas de programação e desenvolva soluçõse inovadores em equipe.",
-    example01: "Exemplo 01",
-    example02: "Exemplo 02",
-    example03: "Exemplo 03",
+    text: "Participe de maratonas de programação e desenvolva soluções inovadoras em equipe.",
+    examples: ["Hackathon Feminino", "Campus Party", "NASA Space Apps"],
   },
-   {
+  {
+    id: 2,
+    icon: "fa-solid fa-code",
     title: "Projetos Internos",
     text: "Colabore em projetos da faculdade e ganhe experiência prática.",
-    example01: "Exemplo 01",
-    example02: "Exemplo 02",
-    example03: "Exemplo 03",
+    examples: ["Sistema Acadêmico", "App da Biblioteca", "Portal do Aluno"],
   },
-   {
+  {
+    id: 3,
+    icon: "fa-solid fa-briefcase",
     title: "Estágios e Vagas",
     text: "Acesse oportunidades exclusivas compartilhadas pela comunidade.",
-    example01: "Programa de Estágio",
-    example02: "Vagas Junior",
-    example03: "Trainee Tech",
+    examples: ["Programa de Estágio", "Vagas Junior", "Trainee Tech"],
   },
-   {
+  {
+    id: 4,
+    icon: "fa-solid fa-user-group",
     title: "Workshops e Mentorias",
     text: "Aprenda com profissionais experientes e desenvolva novas habilidades.",
-    example01: "Git & Github",
-    example02: "React Avançado",
-    example03: "Carreira em Tech",
+    examples: ["Git & GitHub", "React Avançado", "Carreira em Tech"],
   },
 ];
