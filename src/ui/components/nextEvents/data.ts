@@ -1,6 +1,4 @@
-// ... (Seu array 'event' está aqui) ...
 
-// Dados para a seção "Próximos Eventos" (o card roxo)
 export const nextEventsData = [
   {
     monthDay: "Nov 12",

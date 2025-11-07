@@ -5,14 +5,14 @@ export const socialItems = [
     icon: "fa-brands fa-instagram",
     title: "Instagram",
     detail: "@ligada.ads",
-    link: "https://instagram.com/ligada.ads",
+    link: "https://www.instagram.com/adalovelace_unifip",
     id: 1,
   },
   {
-    icon: "fa-brands fa-linkedin-in",
-    title: "LinkedIn",
+    icon: "fa-brands fa-whatsapp",
+    title: "Whatsapp",
     detail: "LIGADA - Liga Acadêmica",
-    link: "https://linkedin.com/company/ligada",
+    link: "https://chat.whatsapp.com/L7W9rRBcfz3COBKJKodBZb?mode=wwt",
     id: 2,
   },
   {

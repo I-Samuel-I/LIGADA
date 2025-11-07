@@ -1,10 +1,7 @@
-$primary-color: #5a1069; // Roxo principal
+$primary-color: #5a1069; 
 $card-bg: #fff;
 $input-border: #e1d1e4;
 
-// =============================
-// Estilos Comuns de Card (o wrapper do formulário)
-// =============================
 .contact-card {
   background-color: $card-bg;
   padding: 30px;
@@ -13,7 +10,7 @@ $input-border: #e1d1e4;
   margin-bottom: 30px; 
 }
 
-// Estilo do Cabeçalho do Card
+
 .card-header {
   display: flex;
   align-items: center;
@@ -31,9 +28,6 @@ $input-border: #e1d1e4;
 }
 
 
-// =============================
-// Estilos Específicos do Formulário (.form-side)
-// =============================
 .form-side {
   form {
     display: flex;
@@ -42,7 +36,7 @@ $input-border: #e1d1e4;
     label {
       font-size: 0.95rem;
       font-weight: 600;
-      color: $primary-color; // Rótulos em roxo
+      color: $primary-color; 
       margin-top: 15px;
       margin-bottom: 5px;
     }
@@ -58,12 +52,12 @@ $input-border: #e1d1e4;
       &:focus {
         border-color: $primary-color;
         outline: none;
-        box-shadow: 0 0 0 1px $primary-color; // Destaque roxo ao focar
+        box-shadow: 0 0 0 1px $primary-color; 
       }
     }
 
     textarea {
-      min-height: 100px; // Altura mínima para o campo de mensagem
+      min-height: 100px; 
     }
 
     button {
@@ -79,7 +73,7 @@ $input-border: #e1d1e4;
       transition: background-color 0.3s;
       
       &:hover {
-        background-color: darken($primary-color, 5%); // Efeito hover
+        background-color: darken($primary-color, 5%); 
       }
     }
   }
