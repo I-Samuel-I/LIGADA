@@ -8,9 +8,14 @@ $text-color: #6b5e6e;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px;
   width: 50%;
   height: fit-content;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .social-card-wrapper {
@@ -18,18 +23,24 @@ $text-color: #6b5e6e;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 25px;
+    text-align: start;
   }
 
   .social-item {
     display: flex;
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid $input-border;
+    padding: 16px;
+    border: 1px solid $input-border;
+    border-radius: 10px;
     text-decoration: none;
     color: inherit;
+    transition: 0.2s ease;
 
-    &:last-child {
-      border-bottom: none;
+    &:hover {
+      border: 1px solid $primary-color;
+      background-color: #e6d6eb;
+
+  
     }
 
     .icon-wrapper {
@@ -53,6 +64,7 @@ $text-color: #6b5e6e;
         font-weight: 600;
         color: #333;
         font-size: 1rem;
+        text-align: start;
       }
       p {
         margin: 0;
@@ -60,5 +72,8 @@ $text-color: #6b5e6e;
         font-size: 0.9rem;
       }
     }
+  }
+  i {
+    font-size: 1.5rem;
   }
 }

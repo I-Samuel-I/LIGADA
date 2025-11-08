@@ -1,4 +1,4 @@
-$primary-color: #5a1069; 
+$primary-color: #5a1069;
 $card-bg: #fff;
 $input-border: #e1d1e4;
 
@@ -7,9 +7,8 @@ $input-border: #e1d1e4;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
-
 
 .card-header {
   display: flex;
@@ -27,7 +26,6 @@ $input-border: #e1d1e4;
   }
 }
 
-
 .form-side {
   form {
     display: flex;
@@ -36,28 +34,32 @@ $input-border: #e1d1e4;
     label {
       font-size: 0.95rem;
       font-weight: 600;
-      color: $primary-color; 
+      color: $primary-color;
       margin-top: 15px;
       margin-bottom: 5px;
+
+      text-align: start;
     }
 
-    input, textarea {
+    input,
+    textarea {
       padding: 12px;
       border: 1px solid $input-border;
       border-radius: 8px;
       font-size: 1rem;
       color: #333;
-      resize: vertical; 
-      
+      resize: vertical;
+
       &:focus {
         border-color: $primary-color;
         outline: none;
-        box-shadow: 0 0 0 1px $primary-color; 
+        box-shadow: 0 0 0 1px $primary-color;
       }
     }
 
     textarea {
-      min-height: 100px; 
+      min-height: 150px;
+      resize: none;
     }
 
     button {
@@ -71,9 +73,9 @@ $input-border: #e1d1e4;
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s;
-      
+
       &:hover {
-        background-color: darken($primary-color, 5%); 
+        background-color: darken($primary-color, 5%);
       }
     }
   }

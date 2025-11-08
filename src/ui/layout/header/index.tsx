@@ -14,19 +14,19 @@ export default function Header() {
 
         <ul>
           <li>
-            <a>Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a>Curso</a>
+            <a href="#ads">Curso</a>
           </li>
           <li>
-            <a>Depoimento</a>
+            <a href="#voice">Depoimento</a>
           </li>
           <li>
-            <a>Eventos</a>
+            <a href="#event">Eventos</a>
           </li>
           <li>
-            <a>Contato</a>
+            <a >Contato</a>
           </li>
         </ul>
       </header>

@@ -39,9 +39,7 @@ header {
     list-style: none;
     margin-right: 10%;
     font-weight: 600;
-    color: li {
 
-    }
     li {
       transition: 0.5s;
 
@@ -49,6 +47,10 @@ header {
         cursor: pointer;
         transform: scale(1.1);
         
+
+        a{
+          color: $defaultColor;
+        }
       }
     }
     li:nth-child(5) {
@@ -65,5 +67,15 @@ header {
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
       }
     }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li:last-child {
+  a {
+    color: white;
   }
 }

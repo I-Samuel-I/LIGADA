@@ -6,12 +6,13 @@ import EventCard from "../ui/components/events";
 import CardNextEvents from "../ui/components/nextEvents";
 import ContactForm from "../ui/components/contact";
 import SocialContact from "../ui/components/social";
+import Voice from "../ui/components/voice";
 
 export default function HomePage() {
   return (
     <>
       <main>
-        <section className="home-container">
+        <section id="ligada" className="home-container">
           <div className="initial-text">
             <p>Liga Acadêmica Feminia de ADS</p>
           </div>
@@ -21,9 +22,7 @@ export default function HomePage() {
           </h1>
           <h2>
             A LIGADA é uma comunidade colaborativa que empodera mulheres no
-            <br />
             curso de Análise e Desenvolvimento de Sistemas através de
-            <br />
             networking, aprendizado e crescimento profissional.
           </h2>
           <div className="button-home">
@@ -41,7 +40,7 @@ export default function HomePage() {
           </div>
         </section>
         {/* =============================================================== */}
-        <section className="about-container">
+        <section id="about" className="about-container">
           <h2>
             Sobre a <span>LIGADA</span>
           </h2>
@@ -65,7 +64,8 @@ export default function HomePage() {
           </aside>
         </section>
         {/* =============================================================== */}
-        <section className="title-section">
+        
+        <section id="ads" className="title-section">
           <h2>
             Sobre o Curso de <span>ADS</span>
           </h2>
@@ -77,7 +77,27 @@ export default function HomePage() {
           <CardAds />
           <Tools />
         </section>
-        <section className="title-section">
+        {/* =============================================================== */}
+        <section id="voice" className="title-section ">
+          <h2>
+            Vozes <span>Femininas</span>
+          </h2>
+          <p className="text-title">
+            Conheça as histórias de mulheres que fazem parte da nossa comunidade
+            e descobriram seu potencial na tecnologia.
+          </p>
+          <Voice />
+
+          <aside className="container-voice">
+            <h3>Faça Parte Dessa História</h3>
+            <p className="text-voice">
+              Junte-se a centenas de mulheres que estão construindo suas
+              carreiras na tecnologia com o apoio de uma comunidade incrível.
+            </p>
+          </aside>
+        </section>
+        {/* =============================================================== */}
+        <section id="event" className="title-section">
           <h2>
             Projetos e <span>Eventos</span>
           </h2>
@@ -88,7 +108,8 @@ export default function HomePage() {
           <EventCard />
           <CardNextEvents />
         </section>
-        <section className="title-section">
+        {/* =============================================================== */}
+        <section id="contact" className="title-section ">
           <h2>
             Entre em <span>Contato</span>
           </h2>

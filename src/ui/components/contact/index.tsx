@@ -64,7 +64,7 @@ export default function ContactForm() {
       </div>
 
       <form ref={form} onSubmit={handleSubmit}>
-        <label htmlFor="name">Nome *</label>
+        <label htmlFor="name">Nome</label>
         <input
           type="text"
           id="name"
@@ -74,7 +74,7 @@ export default function ContactForm() {
           onChange={(e) => setName(e.target.value)}
         />
 
-        <label htmlFor="email">E-mail *</label>
+        <label htmlFor="email">E-mail</label>
         <input
           type="email"
           id="email"
@@ -84,7 +84,7 @@ export default function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <label htmlFor="subject">Assunto *</label>
+        <label htmlFor="subject">Assunto</label>
         <input
           type="text"
           id="subject"
@@ -94,11 +94,12 @@ export default function ContactForm() {
           onChange={(e) => setTopic(e.target.value)}
         />
 
-        <label htmlFor="message">Mensagem *</label>
+        <label htmlFor="message">Mensagem</label>
         <textarea
           id="message"
           name="message"
-          rows={4}
+          rows={3}
+          maxLength={200}
           placeholder="Escreva sua mensagem..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}

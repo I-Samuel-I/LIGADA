@@ -18,8 +18,8 @@ export const socialItems = [
   {
     icon: "fa-regular fa-envelope",
     title: "E-mail",
-    detail: "contato@ligada.edu.br",
-    link: "mailto:contato@ligada.edu.br",
+    detail: "ligada.ads@gmail.com",
+    link: "mailto:ligada.ads@gmail.com",
     id: 3,
   },
 ];

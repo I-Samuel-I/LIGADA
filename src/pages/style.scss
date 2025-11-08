@@ -1,8 +1,12 @@
 $defaultColor: #5a1069;
+
+
+
 main {
   width: 80%;
   margin: auto;
   text-align: center;
+
 
   section {
     margin-bottom: 10%;
@@ -98,51 +102,42 @@ main {
     .about-text {
       font-size: 1.2rem;
       font-weight: 500;
-      width: 60%;;
+      width: 60%;
       margin-top: 2%;
       line-height: 2rem;
       color: #6b5e6e;
     }
-    aside {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: $defaultColor;
-      color: #ffffff;
-      width: 100%;
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 5%;
-
-      h3 {
-        margin-top: 2%;
-        font-size: 2rem;
-      }
-      p {
-        margin-top: 2%;
-        font-weight: 500;
-        line-height: 2rem;
-        font-size: 1.1rem;
-        margin-bottom: 2%;
-      }
-    }
   }
 
   // ================ about-ADS style ================
+
+  
   .ads-container {
     margin-top: 5%;
   }
 
-  .contact-content{
+  .contact-content {
     display: flex;
     justify-content: space-between;
-    gap: 5%
-    
+    gap: 5%;
   }
 }
 
 
- // ================ generic style title section ================
+// ================ voice-ADS style ================
+.container-voice{
+  background-color: #F2E6F4;
+  border: solid 1px #D6BEDB;
+  h3{
+    color: black
+  }
+}
+.text-voice{
+    width: 70%;
+    color: black
+}
+
+// ================ generic style title section ================
 .title-section {
   h2 {
     font-size: 3rem;
@@ -159,5 +154,30 @@ main {
     line-height: 2rem;
     width: 60%;
     color: #6b5e6e;
+  }
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $defaultColor;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 5%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+
+
+  h3 {
+    margin-top: 2%;
+    font-size: 2rem;
+  }
+  p {
+    margin-top: 2%;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
   }
 }
