@@ -44,3 +44,26 @@ $defaultColor: #5a10698a;
     }
   }
 }
+@media (max-width: 992px) {
+  .cardAbout-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .each-card {
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .cardAbout-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .each-card {
+      width: 90%;
+    }
+  }
+}

@@ -46,9 +46,8 @@ header {
       &:hover {
         cursor: pointer;
         transform: scale(1.1);
-        
 
-        a{
+        a {
           color: $defaultColor;
         }
       }
@@ -77,5 +76,25 @@ a {
 li:last-child {
   a {
     color: white;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  header {
+    figure {
+      margin-left: 5%;
+    }
+    ul {
+      margin-right: 5%;
+      gap: 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  header {
+    ul {
+      display: none;
+    }
   }
 }

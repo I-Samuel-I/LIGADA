@@ -2,13 +2,7 @@ $primary-color: #5a1069;
 $card-bg: #fff;
 $input-border: #e1d1e4;
 
-.contact-card {
-  background-color: $card-bg;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px;
-}
+
 
 .card-header {
   display: flex;
@@ -20,9 +14,11 @@ $input-border: #e1d1e4;
     color: $primary-color;
     margin-right: 10px;
   }
+
   h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    color: #333;
   }
 }
 
@@ -37,7 +33,6 @@ $input-border: #e1d1e4;
       color: $primary-color;
       margin-top: 15px;
       margin-bottom: 5px;
-
       text-align: start;
     }
 
@@ -49,6 +44,7 @@ $input-border: #e1d1e4;
       font-size: 1rem;
       color: #333;
       resize: vertical;
+      transition: all 0.3s ease;
 
       &:focus {
         border-color: $primary-color;
@@ -72,11 +68,165 @@ $input-border: #e1d1e4;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
 
       &:hover {
-        background-color: darken($primary-color, 5%);
+        background-color: ($primary-color, 5%);
+        transform: translateY(-2px);
       }
+    }
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+@media (max-width: 992px) {
+  .contact-card {
+    padding: 25px;
+  }
+
+  .card-header {
+    i {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+    }
+  }
+
+  .form-side form {
+    label {
+      font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 13px;
+    }
+  }
+}
+
+
+@media (max-width: 699px) {
+  .contact-card {
+    padding: 22px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    i {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .form-side form {
+    label {
+      font-size: 0.85rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .card-header {
+    margin-bottom: 20px;
+
+    i {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .form-side form {
+    label {
+      font-size: 0.8rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.85rem;
+      padding: 9px;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 325px) {
+  .contact-card {
+    padding: 15px;
+  }
+
+  .card-header {
+    i {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .form-side form {
+    label {
+      font-size: 0.75rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 9px;
     }
   }
 }

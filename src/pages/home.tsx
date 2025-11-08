@@ -17,8 +17,7 @@ export default function HomePage() {
             <p>Liga Acadêmica Feminia de ADS</p>
           </div>
           <h1>
-            Conectando Mulheres <br />
-            na <span>Tecnologia</span>
+            Conectando Mulheres na <span>Tecnologia</span>
           </h1>
           <h2>
             A LIGADA é uma comunidade colaborativa que empodera mulheres no
@@ -64,7 +63,7 @@ export default function HomePage() {
           </aside>
         </section>
         {/* =============================================================== */}
-        
+
         <section id="ads" className="title-section">
           <h2>
             Sobre o Curso de <span>ADS</span>

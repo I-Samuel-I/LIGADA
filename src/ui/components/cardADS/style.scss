@@ -1,10 +1,11 @@
 $defaultColor: #5a10698a;
+
 .cardAds-container {
   margin-top: 5%;
   display: flex;
   gap: 24px;
   justify-content: center;
-   flex-wrap: wrap;
+
   .each-card {
     width: 25%;
     text-align: start;
@@ -22,14 +23,15 @@ $defaultColor: #5a10698a;
       margin-top: 15%;
       font-size: 1.2rem;
     }
+
     p {
       margin-top: 15%;
       width: 100%;
       color: #6b5e6e;
-      line-height: 1.2.5rem;
       font-weight: 500;
       line-height: 1.6;
     }
+
     i {
       display: flex;
       justify-content: center;
@@ -40,6 +42,31 @@ $defaultColor: #5a10698a;
       border-radius: 10px;
       padding: 20px;
       font-size: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .cardAds-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .each-card {
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .cardAds-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .each-card {
+      width: 90%;
     }
   }
 }

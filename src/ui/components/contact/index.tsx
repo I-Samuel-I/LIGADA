@@ -79,7 +79,7 @@ export default function ContactForm() {
           type="email"
           id="email"
           name="email"
-          placeholder="seu.email@exemplo.com"
+          placeholder="email@exemplo.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />

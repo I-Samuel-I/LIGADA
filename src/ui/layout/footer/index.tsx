@@ -14,10 +14,9 @@ export default function Footer() {
 
                 <h2>LIGADA</h2>
               </figure>
-
               <p>
-                Empoderando mulheres na tecnologia através de networking,
-                colaboração e desenvolvimento profissional.
+                Empoderando mulheres na tecnologia através de
+                networking,colaboração e desenvolvimento profissional.
               </p>
             </li>
             <li className="each-info">
@@ -32,15 +31,21 @@ export default function Footer() {
             <li className="each-info">
               <h3>Contato</h3>
               <ul className="link-container">
-                <li>contato@ligada</li>
-                <li>instagram</li>
-                <li>grupo do zap</li>
+                <li>
+                  <a>ligada.ads@gmail.com</a>
+                </li>
+                <li>
+                  <a>instagram</a>
+                </li>
+                <li>
+                  <a>Whatsapp</a>
+                </li>
               </ul>
             </li>
           </ul>
           <div className="divider" />
           <p className="text-credits">
-            Feito compela LIGADA • © 2025 LIGADA - Todos os direitos reservados
+            Feito pela LIGADA • © 2025 LIGADA - Todos os direitos reservados
           </p>
         </div>
       </footer>

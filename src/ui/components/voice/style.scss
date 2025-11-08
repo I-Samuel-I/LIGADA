@@ -12,8 +12,14 @@ $defaultColor: #5a1069;
   border-radius: 12px;
   position: relative;
   text-align: left;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
   border: solid 1px #e1d2e4;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.15);
+  }
 
   &::after {
     content: "”";
@@ -23,7 +29,6 @@ $defaultColor: #5a1069;
     font-size: 150px;
     color: #e3d9e8;
     line-height: 1;
-
     font-weight: 700;
   }
 
@@ -65,5 +70,146 @@ $defaultColor: #5a1069;
     font-style: italic;
     line-height: 1.6;
     color: #333333;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .voice-section-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .voice-card {
+    padding: 25px;
+
+    &::after {
+      font-size: 120px;
+      right: 10px;
+    }
+
+    .voice-header {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+
+      div h3 {
+        font-size: 1rem;
+      }
+
+      div p {
+        font-size: 0.85rem;
+      }
+    }
+
+    blockquote {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+
+@media (max-width: 699px) {
+  .voice-section-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .voice-card {
+    padding: 22px;
+
+    .voice-header {
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+      }
+
+      div h3 {
+        font-size: 0.95rem;
+      }
+
+      div p {
+        font-size: 0.8rem;
+      }
+    }
+
+    blockquote {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .voice-card {
+    padding: 20px;
+
+    &::after {
+      font-size: 90px;
+      right: 8px;
+      top: 5px;
+    }
+
+    .voice-header {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+
+      div h3 {
+        font-size: 0.9rem;
+      }
+
+      div p {
+        font-size: 0.75rem;
+      }
+    }
+
+    blockquote {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+
+@media (max-width: 325px) {
+  .voice-card {
+    padding: 16px;
+
+    &::after {
+      font-size: 70px;
+      right: 6px;
+    }
+
+    .voice-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+      }
+
+      div h3 {
+        font-size: 0.85rem;
+      }
+
+      div p {
+        font-size: 0.7rem;
+      }
+    }
+
+    blockquote {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
   }
 }
