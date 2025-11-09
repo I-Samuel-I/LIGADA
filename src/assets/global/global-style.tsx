@@ -8,10 +8,11 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         
     }
+
     body,html{
         width: 100%;
         user-select: none;
-        scroll-behavior: smooth;
+         scroll-behavior: smooth !important;
         font-family: "Raleway" ,sans-serif;
         font-size: 16px;
         background-color:#FCF6FD;

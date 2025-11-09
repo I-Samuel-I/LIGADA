@@ -78,7 +78,9 @@ li:last-child {
     color: white;
   }
 }
-
+.navbar{
+  display: none;
+}
 
 @media (max-width: 1200px) {
   header {
@@ -96,5 +98,9 @@ li:last-child {
     ul {
       display: none;
     }
+  }
+  .navbar{
+    display: block;
+    border-bottom: none;
   }
 }

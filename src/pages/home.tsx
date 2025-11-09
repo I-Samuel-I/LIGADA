@@ -7,6 +7,7 @@ import CardNextEvents from "../ui/components/nextEvents";
 import ContactForm from "../ui/components/contact";
 import SocialContact from "../ui/components/social";
 import Voice from "../ui/components/voice";
+import Top from "../ui/layout/topButton";
 
 export default function HomePage() {
   return (
@@ -122,6 +123,7 @@ export default function HomePage() {
           </article>
         </section>
       </main>
+      <Top/>
     </>
   );
 }

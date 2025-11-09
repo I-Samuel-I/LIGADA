@@ -3,3 +3,4 @@ React Vite (TypeScript)
 EmailJS
 SyledComponents
 SweetAlert2
+Lenis

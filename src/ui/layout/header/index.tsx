@@ -1,5 +1,6 @@
 import "./style.scss";
 import Logo from "../../../assets/images/LogoWithOutbg.png";
+import NavBar from "../navbar";
 export default function Header() {
   return (
     <>
@@ -29,6 +30,10 @@ export default function Header() {
             <a >Contato</a>
           </li>
         </ul>
+        <div className="navbar">
+          <NavBar/>
+        </div>
+        
       </header>
     </>
   );
