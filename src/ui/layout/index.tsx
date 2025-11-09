@@ -11,9 +11,8 @@ export default function MainLayout({
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
-      smooth: true,
     });
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
