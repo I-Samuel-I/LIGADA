@@ -22,23 +22,35 @@ export default function Footer() {
             <li className="each-info">
               <h3>Links Rápidos</h3>
               <ul className="link-container">
-                <li>Sobre</li>
-                <li>Curso</li>
-                <li>Depoimento</li>
-                <li>Eventos</li>
+                <li>
+                  <a href="#ligada"> Sobre</a>
+                </li>
+                <li>
+                  <a href="#ads">Curso</a>
+                </li>
+                <li>
+                  <a href="#events">Eventos</a>
+                </li>
+                <li>
+                  <a href="#voice">Depoimento</a>
+                </li>
               </ul>
             </li>
             <li className="each-info">
               <h3>Contato</h3>
               <ul className="link-container">
                 <li>
-                  <a>ligada.ads@gmail.com</a>
+                  <a href="mailto:ligada.ads@gmail.com">ligada.ads@gmail.com</a>
                 </li>
                 <li>
-                  <a>instagram</a>
+                  <a href="https://www.instagram.com/adalovelace_unifip">
+                    Instagram
+                  </a>
                 </li>
                 <li>
-                  <a>Whatsapp</a>
+                  <a href="https://chat.whatsapp.com/L7W9rRBcfz3COBKJKodBZb?mode=wwt">
+                    Whatsapp
+                  </a>
                 </li>
               </ul>
             </li>

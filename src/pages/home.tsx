@@ -8,39 +8,40 @@ import ContactForm from "../ui/components/contact";
 import SocialContact from "../ui/components/social";
 import Voice from "../ui/components/voice";
 import Top from "../ui/layout/topButton";
+import ada from "../assets/images/ada.png";
 
 export default function HomePage() {
   return (
     <>
       <main>
         <section id="ligada" className="home-container">
-          <div className="initial-text">
-            <p>Liga Acadêmica Feminia de ADS</p>
+          <div>
+            <div className="title-container">
+              <h1>Conectando Mulheres</h1>
+              <h1>
+                na <span>Tecnologia</span>
+              </h1>
+            </div>
+
+            <div className="subtitle-container">
+              <h2>A LIGADA inspira mulheres a crescerem</h2>
+              <h2>na tecnologia com propósito.</h2>
+            </div>
+
+            <div className="button-home">
+              <a href="#contact">Junte-se a Nós</a>
+              <a href="#ads">Saiba Mais</a>
+            </div>
           </div>
-          <h1>
-            Conectando Mulheres na <span>Tecnologia</span>
-          </h1>
-          <h2>
-            A LIGADA é uma comunidade colaborativa que empodera mulheres no
-            curso de Análise e Desenvolvimento de Sistemas através de
-            networking, aprendizado e crescimento profissional.
-          </h2>
-          <div className="button-home">
-            <a>Junte-se a Nós</a>
-            <a>Saiba Mais</a>
-          </div>
-          <div className="journey-container">
-            <h3>Jornada</h3>
-            <ul>
-              <li>Entrada e acolhimento</li>
-              <li>Desenvolvimento em Hard/Soft skills</li>
-              <li>Projetos colaborativos</li>
-              <li>Inserção no mercado</li>
-            </ul>
+          <div className="img-container combo-anim">
+            <img src={ada} alt="ada" />
           </div>
         </section>
         {/* =============================================================== */}
         <section id="about" className="about-container">
+          <div className="initial-text">
+            <p>Liga Acadêmica Feminia de ADS</p>
+          </div>
           <h2>
             Sobre a <span>LIGADA</span>
           </h2>
@@ -123,7 +124,7 @@ export default function HomePage() {
           </article>
         </section>
       </main>
-      <Top/>
+      <Top />
     </>
   );
 }
