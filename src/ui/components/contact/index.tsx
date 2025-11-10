@@ -51,7 +51,7 @@ export default function ContactForm() {
           customClass: {
             confirmButton: "swal-confirm-button",
           },
-          color: "#fff",
+        
         });
         setName("");
         setEmail("");
