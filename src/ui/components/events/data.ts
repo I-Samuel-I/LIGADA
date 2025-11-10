@@ -4,7 +4,11 @@ export const event = [
     icon: "fa-solid fa-trophy",
     title: "Hackathons",
     text: "Participe de maratonas de programação e desenvolva soluções inovadoras em equipe.",
-    examples: ["Hackathon Feminino", "Campus Party", "NASA Space Apps"],
+    examples: [
+      "Desenvolva suas habilidades em equipe",
+      "Conecte-se com mentores e profissionais da área",
+      "Aprenda tecnologias novas em um ambiente real",
+    ],
   },
   {
     id: 2,

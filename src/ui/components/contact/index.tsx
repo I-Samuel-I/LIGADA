@@ -40,9 +40,17 @@ export default function ContactForm() {
       .then(() => {
         swal.fire({
           title: "SUCESSO!",
+
           text: "Sua mensagem foi enviada. Por favor verifique seu email para nossa resposta.",
           icon: "success",
-          background: "#222222",
+          color: "#ffffff",
+          iconColor: "#f8f5f9",
+          background: "#742D86",
+          confirmButtonColor: "#5a1069",
+          confirmButtonText: "OK",
+          customClass: {
+            confirmButton: "swal-confirm-button",
+          },
           color: "#fff",
         });
         setName("");
@@ -52,7 +60,11 @@ export default function ContactForm() {
       })
       .catch((error) => {
         console.error("Falha ao enviar o email: ", error);
-        swal.fire({ title: "ERRO!", text: "Falha ao enviar mensagem.", icon: "error" });
+        swal.fire({
+          title: "ERRO!",
+          text: "Falha ao enviar mensagem.",
+          icon: "error",
+        });
       });
   };
 

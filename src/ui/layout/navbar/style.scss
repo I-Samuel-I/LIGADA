@@ -8,31 +8,23 @@ $text-light: #ffffff;
     display: none;
   }
 
-  // ==========================
-  // Botão (Menu Hambúrguer)
-  // ==========================
   .menu-wrapper {
     width: 2rem;
     height: 2.3rem;
     position: relative;
     z-index: 6;
     top: 0px;
-    left: 0px;
+    right: 25px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    transform: scale(0.9);
+    transform: scale(1);
     cursor: pointer;
     transition: transform 0.3s ease;
 
     @media (max-width: 600px) {
-      transform: scale(0.8);
-      right: 100px;
-    }
-
-    @media (max-width: 426px) {
-      transform: scale(0.8);
-      right: 70px;
+      transform: scale(0.9);
+      right: 10px;
     }
 
     div {
@@ -45,6 +37,9 @@ $text-light: #ffffff;
     }
 
     &.open {
+      position: fixed;
+      top: 27px;
+      right: 50px;
       div {
         background-color: #ccc;
 
@@ -62,21 +57,17 @@ $text-light: #ffffff;
     }
   }
 
-  // ==========================
-  // Menu lateral
-  // ==========================
   .nav-wrapper {
     position: fixed;
     top: 0;
     right: 0;
     width: 45%;
     height: 100vh;
-    z-index: 5;
+    z-index: 1;
     transform: translateX(100%);
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
     transition: all 0.3s ease-in-out;
-
     background-color: rgba(90, 16, 105, 0.98);
 
     @media (max-width: 600px) {
@@ -102,19 +93,20 @@ $text-light: #ffffff;
         padding: 0;
 
         li {
+          z-index: 2;
           list-style: none;
           padding: 15px 0;
           margin-top: 10%;
           text-align: center;
           border-radius: 6px;
           transition: all 0.3s ease;
-
+          
           &:hover {
             background-color: $bg-light;
             transform: scale(1.05);
           }
 
-          a {
+          a { 
             color: #ffffff;
             text-decoration: none;
             font-weight: 500;
