@@ -355,14 +355,14 @@ aside {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
   main {
     section {
       width: 90%;
     }
 
     .home-container {
-      height: 85vh;
+    
       margin-top: 5%;
       h1 {
         font-size: 1.8rem;
@@ -425,7 +425,7 @@ aside {
         font-size: 0.9rem;
       }
       img {
-        width: 290px;
+        width: 300px;
       }
     }
 
@@ -471,7 +471,7 @@ aside {
   }
 }
 
-@media (max-width: 1440px) and (max-height: 800px) {
+@media (min-width: 768px) and (max-width: 1440px) and (max-height: 800px) {
   main {
     .home-container {
       margin-top: 3%;
@@ -483,7 +483,7 @@ aside {
     }
   }
 }
-@media (max-width: 1440px) and (max-height: 650px) {
+@media (min-width: 768px) and (max-width: 1440px) and (max-height: 650px) {
   main {
     .home-container {
       padding-right: 10%;
@@ -493,7 +493,7 @@ aside {
     }
   }
 }
-@media (max-width: 1440px) and (max-height: 550px) {
+@media (min-width: 768px) and (max-width: 1440px) and (max-height: 550px) {
   main {
     .home-container {
       margin-top: 3%;
@@ -501,6 +501,32 @@ aside {
       padding-right: 10%;
       img {
         width: 250px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) and (max-height: 700px) {
+  main {
+    .home-container {
+      margin-top: 10%;
+  
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 5%;
+
+      img {
+        width: 250px;
+        margin-bottom: 10%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4;
       }
     }
   }
