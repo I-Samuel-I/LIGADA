@@ -4,9 +4,7 @@
 
 #### This project is a community website dedicated to LIGADA, an academic league that empowers women in the field of Analysis and Systems Development (ADS).
 
-<img width="800px" src="./src/assets/images/LigadaPrint.png">
-
-## 💻 Online Page: ***
+## 💻 Online Page: [LIGADA](https://ligada.vercel.app)
 
 ##  How to use:
 
@@ -39,8 +37,12 @@ Here are the main tools and libraries used to build this project:
 - ⚛️ [React](https://reactjs.org/) – JavaScript library for building user interfaces  
 - 📜 [TypeScript](https://www.typescriptlang.org/docs/) – Programming language used  
 - 💅 [Sass](https://styled-components.com/) – For writing CSS-in-JS styling  
+- 💅 [Styled-Components](https://styled-components.com/) – For writing CSS-in-JS styling  
 - 🎸 [Font Awesome](https://fontawesome.com/) – Icon toolkit used for UI icons
 - ▲ [Vercel](https://vercel.com/) – Hosting platform used for deployment  
+- 🔔 [SweetAlert2](https://sweetalert2.github.io/) – Beautiful, customizable pop-up alerts  
+- 📧 [EmailJS](https://www.emailjs.com/) – For sending emails directly from the client 
+- 🎞️ [Lenis](https://github.com/studio-freight/lenis) – Smooth scroll library for modern web experiences  
 
 ## Version
 

@@ -39,17 +39,26 @@ export default function Footer() {
             <li className="each-info">
               <h3>Contato</h3>
               <ul className="link-container">
+                {" "}
                 <li>
-                  <a href="mailto:ligada.ads@gmail.com">ligada.ads@gmail.com</a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/adalovelace_unifip">
+                  <a
+                    href="https://www.instagram.com/adalovelace_unifip"
+                    target="_blank"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://chat.whatsapp.com/L7W9rRBcfz3COBKJKodBZb?mode=wwt">
+                  <a
+                    href="https://chat.whatsapp.com/L7W9rRBcfz3COBKJKodBZb?mode=wwt"
+                    target="_blank"
+                  >
                     Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:ligada.ads@gmail.com" target="_blank">
+                    Email
                   </a>
                 </li>
               </ul>

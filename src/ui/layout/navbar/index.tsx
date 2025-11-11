@@ -20,20 +20,31 @@ const NavBar = () => {
       <div className={`nav-wrapper ${open ? "open" : ""}`}>
         <nav>
           <ul>
+            <li onClick={() => setOpen(!open)}>
+              <a href="#about">SOBRE</a>
+            </li>
+            <li onClick={() => setOpen(!open)}>
+              <a href="#ads">CURSO</a>
+            </li>
+            <li onClick={() => setOpen(!open)}>
+              <a href="#voice">DEPOIMENTOS</a>
+            </li>
+            <li onClick={() => setOpen(!open)}>
+              <a href="#event">EVENTOS</a>
+            </li>
+            <li onClick={() => setOpen(!open)}>
+              <a href="#contact">CONTATO</a>
+            </li>
+          </ul>
+          <ul className="nav-socials">
             <li>
-              <a href="#about">Sobre</a>
+              <a href="https://www.instagram.com/adalovelace_unifip" target="_blank">Instagram</a>
             </li>
             <li>
-              <a href="#ads">Curso</a>
+              <a href="https://chat.whatsapp.com/L7W9rRBcfz3COBKJKodBZb?mode=wwt" target="_blank">Whatsapp</a>
             </li>
             <li>
-              <a href="#voice">Depoimentos</a>
-            </li>
-            <li>
-              <a href="#event">Eventos</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <a href="mailto:ligada.ads@gmail.com" target="_blank">Email</a>
             </li>
           </ul>
         </nav>
