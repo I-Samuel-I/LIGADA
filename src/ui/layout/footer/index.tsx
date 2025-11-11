@@ -23,13 +23,13 @@ export default function Footer() {
               <h3>Links Rápidos</h3>
               <ul className="link-container">
                 <li>
-                  <a href="#ligada"> Sobre</a>
+                  <a href="#ligada">Sobre</a>
                 </li>
                 <li>
                   <a href="#ads">Curso</a>
                 </li>
                 <li>
-                  <a href="#events">Eventos</a>
+                  <a href="#event">Eventos</a>
                 </li>
                 <li>
                   <a href="#voice">Depoimento</a>

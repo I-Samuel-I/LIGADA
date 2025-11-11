@@ -27,7 +27,7 @@ export default function Header() {
             <a href="#event">Eventos</a>
           </li>
           <li>
-            <a >Contato</a>
+            <a href="#contact" >Contato</a>
           </li>
         </ul>
         <div className="navbar">

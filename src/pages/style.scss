@@ -362,7 +362,6 @@ aside {
     }
 
     .home-container {
-    
       margin-top: 5%;
       h1 {
         font-size: 1.8rem;
@@ -414,10 +413,9 @@ aside {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px) and (orientation: portrait) {
   main {
     .home-container {
-      height: 100vh;
       h1 {
         font-size: 1.6rem;
       }
@@ -451,13 +449,12 @@ aside {
     }
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 350px) and (orientation: portrait) {
   main {
     section {
       margin-top: 10%;
     }
     .home-container {
-      height: 100vh;
       h1 {
         font-size: 1.6rem;
       }
@@ -465,7 +462,7 @@ aside {
         font-size: 0.9rem;
       }
       img {
-        width: 250px;
+        width: 275px;
       }
     }
   }
@@ -505,28 +502,33 @@ aside {
     }
   }
 }
-@media (max-width: 767px) and (max-height: 700px) {
+@media (min-width: 768px) and (max-width: 500px) and (max-height: 750px) {
   main {
     .home-container {
       margin-top: 10%;
-  
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 5%;
 
       img {
         width: 250px;
-        margin-bottom: 10%;
+        margin-bottom: 200px;
       }
+    }
+  }
+}
 
-      h1 {
-        font-size: 1.5rem;
+@media (min-width: 0px) and (max-width: 500px) and (max-height: 600px) {
+  main {
+    .home-container {
+      img {
+        width: 250px;
       }
-
-      p {
-        font-size: 0.9rem;
-        line-height: 1.4;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) and (max-height: 500px) {
+  main {
+    .home-container {
+      img {
+        width: 200px;
       }
     }
   }
