@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     body,html{
         width: 100%;
         user-select: none;
-        overflow-y:hidden;
+        overflow-x:hidden;
         scroll-behavior: smooth !important;
         font-family: "Raleway" ,sans-serif;
         font-size: 16px;

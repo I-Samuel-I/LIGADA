@@ -86,7 +86,7 @@ $text-light: #ffffff;
         height: 100%;
         padding: 24px;
         ul {
-          margin-top: 25%;
+          margin-top: 10%;
           display: flex;
           flex-direction: column;
           align-items: start;
@@ -114,13 +114,13 @@ $text-light: #ffffff;
         }
         .nav-socials {
           position: absolute;
-          bottom: 50px;
+          bottom: 100px;
           display: flex;
           flex-direction: row;
 
           li {
             a {
-              font-size: 0.85rem;
+              font-size: 1rem;
               font-weight: 600;
             }
           }
